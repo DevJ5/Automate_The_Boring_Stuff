@@ -19,7 +19,7 @@ for guessesTaken in range(1,7):
 		break
 
 
-# no block scope within loops
+# no block scope within loops.
 if guess == randomNumber:
 	print("Yay, correct! The number was %s." % randomNumber)
 else:
