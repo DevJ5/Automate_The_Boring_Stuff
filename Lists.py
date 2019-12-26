@@ -27,3 +27,23 @@ print(list("Hello"))
 # Includes
 print("rat" in arr)
 print("cat" not in arr)
+
+# Ranges
+print(list(range(0,100, 2)))
+
+# For loop
+for i in range(0,5):
+    print(i)
+
+for j in range(len(arr2)):
+    print("Index " + str(j) + ": " + arr2[j])
+
+# Multiple assignments of array elements to variables
+propertiesOfCat = ['fat', 'grey', 'stubborn']
+size, color, mood = propertiesOfCat
+print(size, color, mood)
+
+# Swapping is easy in Python, no temp variable needed.
+a = 10
+b = 20
+a, b = b, a
