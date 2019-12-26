@@ -8,8 +8,15 @@ print(arr[1:3]) # [rat, dog]
 print(arr[:1])  # [cat]
 print(arr[2:])  # [dog]
 
+# Adding item to end of array
+arr.append("beaver")
+
 # Deleting an item in an array
-del arr[2]
+del arr[3] # or arr.remove("beaver")
+
+
+# Adding item to an index of an array
+arr.insert(0, "beaver")
 
 # Length of an array or string
 print(len(arr))
@@ -47,3 +54,9 @@ print(size, color, mood)
 a = 10
 b = 20
 a, b = b, a
+
+# Sorting is done by ascii codes. Uppercase comes before lowercase
+arr.sort()
+arr.sort(reverse=True)
+arr.sort(key=str.lower) # Now its true alphabetical order instead of ascii code
+
