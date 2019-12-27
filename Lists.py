@@ -60,3 +60,28 @@ arr.sort()
 arr.sort(reverse=True)
 arr.sort(key=str.lower) # Now its true alphabetical order instead of ascii code
 
+# Strings and lists are similar
+print(list("Hello"))
+name = "Ernie"
+print(name[:2])
+print("xxx" in name)
+
+# Strings are immutable
+try:
+    name[5] = "s"
+except Exception as e:
+    print("This will give an error" + str(e))
+
+# To copy a list
+import copy
+spam = ["a", 
+        "b",
+        "c",
+        "d"]
+
+copyRefSpam = spam
+deepCopy = copy.deepcopy(spam)
+print(copyRefSpam == spam) # True, cause pointer.
+print(deepCopy == spam) # True, cause the lists contain the same values.
+print(deepCopy is spam) # False, because they are in different memory addresses.
+
