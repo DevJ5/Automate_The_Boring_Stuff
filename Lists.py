@@ -14,9 +14,11 @@ arr.append("beaver")
 # Deleting an item in an array
 del arr[3] # or arr.remove("beaver")
 
-
 # Adding item to an index of an array
 arr.insert(0, "beaver")
+
+# Extending the array with another array
+arr.extend(['mosquito', 'goldfish'])
 
 # Length of an array or string
 print(len(arr))
