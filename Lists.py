@@ -47,6 +47,17 @@ for i in range(0,5):
 for j in range(len(arr2)):
     print("Index " + str(j) + ": " + arr2[j])
 
+# Looping with index:
+for index, animal in enumerate(arr, start=1):
+    print(index, animal)
+
+arr_str = ", ".join(arr)
+print(arr_str)
+new_arr = arr_str.split(', ')
+print(new_arr)
+
+print("-----------------------")
+
 # Multiple assignments of array elements to variables
 propertiesOfCat = ['fat', 'grey', 'stubborn']
 size, color, mood = propertiesOfCat
@@ -61,6 +72,7 @@ a, b = b, a
 arr.sort()
 arr.sort(reverse=True)
 arr.sort(key=str.lower) # Now its true alphabetical order instead of ascii code
+sortedArr = sorted(arr) # This will return a new list
 
 # Strings and lists are similar
 print(list("Hello"))
@@ -86,4 +98,16 @@ deepCopy = copy.deepcopy(spam)
 print(copyRefSpam == spam) # True, cause pointer.
 print(deepCopy == spam) # True, cause the lists contain the same values.
 print(deepCopy is spam) # False, because they are in different memory addresses.
+
+# Aggregate functions on list of numbers:
+numbers = [2,5,7,2,1]
+print(sum(numbers))
+print(min(numbers))
+print(max(numbers))
+
+# Get the index of an item in the list
+try:
+    print(numbers.index(5))
+except ValueError as e:
+    print("Value not in list.")
 
