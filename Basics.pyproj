@@ -28,6 +28,9 @@
     <Compile Include="Lists.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Dictionary.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sets.py">
       <SubType>Code</SubType>
     </Compile>
