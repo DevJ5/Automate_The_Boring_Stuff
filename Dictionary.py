@@ -1,3 +1,5 @@
+import pprint
+
 pizzas = {
     "cheese": 9,
     "pepperoni": 10,
@@ -29,7 +31,9 @@ for character in message.upper():
     count.setdefault(character, 0)
     count[character] +=1
 
-print(count)
+pprint.pprint(count)         # Shows the dictionary in a readable format.
+text = pprint.pformat(count) # Returns a string value of this output format
+print(text)
 
 print(pizzas.values())  # Returns a listlike datatype (dict_values)
 list(pizzas.values())   # Returns list of values
