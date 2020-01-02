@@ -3,7 +3,8 @@ def askUserInput():
         try:
             print("What is your age?")
             age = int(input())
-            return age
+            if type(age) == int:
+                return age
         except ValueError:
             print("Not a valid input...")
 

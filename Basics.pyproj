@@ -37,6 +37,9 @@
     <Compile Include="Sets.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Strings.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Tuples.py">
       <SubType>Code</SubType>
     </Compile>
