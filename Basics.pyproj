@@ -34,6 +34,9 @@
     <Compile Include="Classes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CommandLine.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sets.py">
       <SubType>Code</SubType>
     </Compile>

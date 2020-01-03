@@ -45,5 +45,9 @@ spam.replace("e", "xyz")
 print(pyperclip.paste())
 pyperclip.copy("Hello world")
 
+name="Alice"
+place="Main street"
+print("Who lives at %s? %s" % (place, name))
+
 
 
