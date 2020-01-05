@@ -1,5 +1,8 @@
 import os
 from datetime import datetime
+# To print the methods of a module
+print(dir(os))
+
 # Get current working directory
 print(os.getcwd())
 # Change current working directory
@@ -60,3 +63,11 @@ print(os.path.basename("/tmp/test.txt"))
 print(os.path.dirname("tmp/test.txt"))
 # Print both
 print(os.path.split("tmp/test.txt"))
+
+# Check if its a directory
+print(os.path.isdir(""))
+# Check if its a file
+print(os.path.isfile(""))
+
+# Print the filepath and extension seperately
+print(os.path.splitext('/tmp/test.txt'))
