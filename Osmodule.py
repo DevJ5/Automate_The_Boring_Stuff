@@ -50,5 +50,13 @@ print(file_path)
 with open(file_path, 'w') as f:
     f.writelines("Something something")
 
+# Check existance of a file, it doesnt exist, create it. 'a' gets used for appending.
+# if not os.path.exists('/tmp/test'):
+#    with open('/tmp/test', 'w'): pass
 
-
+# Prints the filename
+print(os.path.basename("/tmp/test.txt"))
+# Prints the direcotry
+print(os.path.dirname("tmp/test.txt"))
+# Print both
+print(os.path.split("tmp/test.txt"))
