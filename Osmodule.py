@@ -41,5 +41,14 @@ for dirpath, dirnames, filenames in os.walk(os.getcwd()):
 """
 
 # Environment variables
-print(os.environ())
-print(os.environ.get('HOME'))
+# print(os.environ)
+print(os.environ.get('USERPROFILE'))
+# Create a file in a certain path. Use path.join to prevent guesses of backslashes in filepaths.
+file_path = os.path.join(os.environ.get('USERPROFILE'), 'test.txt') 
+print(file_path)
+
+with open(file_path, 'w') as f:
+    f.writelines("Something something")
+
+
+
