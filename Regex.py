@@ -19,4 +19,8 @@ matchObject3 = batRegEx.search("Batman lost a batmobile")
 if matchObject3 != None:
     print(matchObject3.group(1))
 
+# Without precompiling the regex:
+print(re.match("Bat(wo)?man", "Batman"))
+print(re.search("Bat(wo)?man", "Batman"))
+
 
