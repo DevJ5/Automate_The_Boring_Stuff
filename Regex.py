@@ -24,7 +24,7 @@ print(re.match("Bat(wo)?man", "Batman"))
 print(re.search("Bat(wo)*man", "Batman") == None)
 print(re.findall("Bat(wo)+man", "Batwoman"))
 
-# Non greedy:
+# Non greedy (means matching the shortes string possible, with ? after curly braces):
 print(re.match("\d{3,5}?", "1234567890"))
 
 
