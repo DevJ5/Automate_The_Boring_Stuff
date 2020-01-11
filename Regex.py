@@ -31,4 +31,14 @@ print(re.match("\d{3,5}?", "1234567890"))
 dotStar = re.compile(r".*", re.DOTALL)
 print(dotStar.search("Hello\nWorld!"))
 
+# Find and replace using sub method
+namesRegex = re.compile(r"Agent \w+")
+print(namesRegex.sub("***", "Agent Bob is on duty and so is Agent Alice"))
+
+# Replace with parts of the original group (use raw string because of \1 for group)
+namesRegex2 = re.compile(r"Agent (\w)\w*")
+print(namesRegex2.sub(r"\1***", "Agent Bob is on duty and so is Agent Alice"))
+
+
+
 
