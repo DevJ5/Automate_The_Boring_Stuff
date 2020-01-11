@@ -27,4 +27,8 @@ print(re.findall("Bat(wo)+man", "Batwoman"))
 # Non greedy (means matching the shortes string possible, with ? after curly braces):
 print(re.match("\d{3,5}?", "1234567890"))
 
+# .* means all but not newline chars, to add those as well use second argument re.DOTALL
+dotStar = re.compile(r".*", re.DOTALL)
+print(dotStar.search("Hello\nWorld!"))
+
 
