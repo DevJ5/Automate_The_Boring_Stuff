@@ -40,6 +40,9 @@
     <Compile Include="Osmodule.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="phoneScraper.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Regex.py">
       <SubType>Code</SubType>
     </Compile>

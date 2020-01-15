@@ -28,7 +28,7 @@ print(re.findall("Bat(wo)+man", "Batwoman"))
 print(re.match("\d{3,5}?", "1234567890"))
 
 # .* means all but not newline chars, to add those as well use second argument re.DOTALL
-dotStar = re.compile(r".*", re.DOTALL)
+dotStar = re.compile(r".*", re.DOTALL | re.IGNORECASE)
 print(dotStar.search("Hello\nWorld!"))
 
 # Find and replace using sub method
@@ -38,6 +38,15 @@ print(namesRegex.sub("***", "Agent Bob is on duty and so is Agent Alice"))
 # Replace with parts of the original group (use raw string because of \1 for group)
 namesRegex2 = re.compile(r"Agent (\w)\w*")
 print(namesRegex2.sub(r"\1***", "Agent Bob is on duty and so is Agent Alice"))
+
+# Verbose lets you use multiline and comments into the regex
+verboseRegex = re.compile(r''' 
+\d\d\d
+- # A comment here for example still works
+\d\d\d
+''', re.VERBOSE)
+
+print(verboseRegex.search("123-456"))
 
 
 
