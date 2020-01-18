@@ -64,6 +64,8 @@ print(os.path.dirname("tmp/test.txt"))
 # Print both
 print(os.path.split("tmp/test.txt"))
 
+# Prints out if the path exists
+os.path.exists('/tmp/test.txt')
 # Check if its a directory
 print(os.path.isdir(""))
 # Check if its a file
@@ -71,3 +73,16 @@ print(os.path.isfile(""))
 
 # Print the filepath and extension seperately
 print(os.path.splitext('/tmp/test.txt'))
+
+# Get the absolute path from a relative path (from the current working directory)
+print(os.path.abspath("test.txt"))
+
+# Get the size of all files in the current directory
+totalSize = 0
+for file in os.listdir():
+    if not os.path.isfile(file):
+       continue
+    else:
+        totalSize += os.path.getsize(os.path.abspath(file))   
+
+
