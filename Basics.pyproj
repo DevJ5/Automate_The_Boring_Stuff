@@ -49,6 +49,12 @@
     <Compile Include="Sets.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Shelve.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shutil.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Strings.py">
       <SubType>Code</SubType>
     </Compile>
