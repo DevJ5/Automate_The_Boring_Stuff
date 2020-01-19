@@ -43,6 +43,9 @@
     <Compile Include="phoneScraper.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="RaiseAssert.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Regex.py">
       <SubType>Code</SubType>
     </Compile>
