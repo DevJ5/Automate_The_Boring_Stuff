@@ -14,3 +14,8 @@ for filename in os.listdir():
 
 # os.rmdir('myfolder') # removes empty directory
 # shutil.rmtree('myfolder')
+
+for folderName, subfolders, filenames in os.walk(os.getcwd()):
+    print(folderName, subfolders, filenames)
+    #if 'myfolder2' in subfolders:
+    #    shutil.rmtree('myfolder2')
