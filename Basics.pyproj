@@ -52,6 +52,9 @@
     <Compile Include="Regex.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Requests.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sets.py">
       <SubType>Code</SubType>
     </Compile>
@@ -67,7 +70,7 @@
     <Compile Include="Tuples.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Webscraping.py">
+    <Compile Include="Webbrowser.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
