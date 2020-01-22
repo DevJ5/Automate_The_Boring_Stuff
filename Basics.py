@@ -16,3 +16,4 @@ def printAge(age):
 
 age = askUserInput()
 printAge(age)
+input('Press ENTER to exit')
