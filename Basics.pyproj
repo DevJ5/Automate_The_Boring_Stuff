@@ -37,6 +37,9 @@
     <Compile Include="CommandLine.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Logging.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Osmodule.py">
       <SubType>Code</SubType>
     </Compile>
