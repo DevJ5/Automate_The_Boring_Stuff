@@ -1,6 +1,11 @@
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-#logging.disable(logging.CRITICAL)
+
+# Save logging to file:
+logging.basicConfig(filename='mylog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# To disable all lower levels use the highest level (CRITICAL)
+logging.disable(logging.CRITICAL)
 
 """
 5 levels: debug, info, warning, error, critical
@@ -16,4 +21,4 @@ def factorial(n):
 
 print(factorial(5))
 
-logging.debug('End of program')
+logging.info('End of program')
