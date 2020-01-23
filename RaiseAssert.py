@@ -7,3 +7,5 @@ else:
     print("This prints when there is no error.")
 finally:
    print("Still print this out...")
+
+assert True == False, "nono"
