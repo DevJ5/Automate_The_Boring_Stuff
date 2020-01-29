@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>348432ff-073f-4d6d-a578-d318bbf82ac2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ReadingExcel.py</StartupFile>
+    <StartupFile>ReadingAndEditingExcel.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -49,7 +49,7 @@
     <Compile Include="RaiseAssert.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ReadingExcel.py">
+    <Compile Include="ReadingAndEditingExcel.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Regex.py">
