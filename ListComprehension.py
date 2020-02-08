@@ -13,5 +13,8 @@ print([(n, c) for n in range(4) for c in "abcd"])
 names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
 heroes = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
 
-my_dict = {name: hero for name, hero in zip(names, heroes)}
+my_dict = {name: hero for name, hero in zip(names, heroes) if name != "Peter"}
 print(my_dict)
+
+# Set Comprehensions
+my_set = {n for n in numbers}
