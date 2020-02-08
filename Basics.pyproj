@@ -25,6 +25,9 @@
     <Compile Include="GuessTheNumber.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ListComprehension.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Lists.py">
       <SubType>Code</SubType>
     </Compile>
